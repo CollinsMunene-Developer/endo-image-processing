@@ -44,6 +44,9 @@ RUN pip install --no-cache-dir \
 
 # Install Azure CLI
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+#install aws cli
+RUN apt-get install -y awscli
+
 
 # Set working directory
 WORKDIR /workspace
